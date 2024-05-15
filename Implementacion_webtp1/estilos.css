@@ -1,0 +1,483 @@
+
+h1, .CTA, legend, .subtitulo-formulario {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+legend {
+    font-size: 16px;
+}
+.main p, .bullets H2, .subtitulo-formulario {
+    font-size: 24px;
+}
+.nuevos-tutoriales p {
+    font-size: 18px;
+}
+.guias-de-compra p {
+    font-size: 20px;
+}
+.CTA {
+    font-size: 20px; 
+}
+.formulario-texto h1 {
+    /*.main h1, */
+    font-size: 64px; 
+}
+.guias-de-compra h1, .ultimas-noticias h1, .nuevos-tutoriales h1 {
+    font-size: 35px;
+}
+.bullets H2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+
+/*pagina*/
+body {
+    margin: 0%;
+    /*padding-left: 144px;
+    padding-right: 144px;*/
+    background-color: #0C1D25;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.grid-contenedor {
+    width: 1153px;
+    width: 99%;
+    height: 4417px;
+
+
+}
+
+header {
+    height: 74px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #0C1D25;
+
+    padding-left: 144px;
+    padding-right: 144px;
+}
+header img {
+    height: auto;
+    width: 170px;
+    margin: -30px 0 -30px 0;
+}
+
+.main {
+    width: auto;
+    height: 579px;
+    /*703px*/
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*padding-top: 124px;*/
+
+    padding-top: 124px;
+
+    background-color: #0C1D25;
+
+    padding-left: 144px;
+    padding-right: 144px;
+}
+/*.contenedor-img-main {
+    margin: 0%;
+}*/
+.main img {
+    /*708px*/
+    width: auto;
+    height: auto;
+    margin: -122px 0 0 0;
+    /*margin-bottom: -122px;*/
+    margin-right: -100px;
+}
+h1 {
+    color: greenyellow;
+}
+p {
+    margin-top: 44px;
+    color: white;
+}
+.CTA {
+    height: 51px;
+    margin-top: 57px;
+    border: none;
+    padding-left: 99px;
+    padding-right: 99px;
+    background-color: greenyellow;
+    cursor: pointer;
+    border-radius: 80px;
+}
+
+.bullets {
+    width: auto;
+    height: 262px;
+    background-color: #E7E7E7;
+
+   /* margin-left: 0px; ver como quitar en padding/margin en esta seccion*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding-top: 100px;
+    gap: 27px;
+   /* padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 142px;
+    padding-right: 142px;*/
+    padding-left: 144px;
+    padding-right: 144px;
+}
+.contenedor-texto {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.bullets H2 {
+    margin: 0%;
+
+}
+
+.a-b {
+    height: 156px;
+    width: 367px;
+    background-color: #E7E7E7;
+    /*border-style: solid;
+    border-color: black;*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.b-b {
+    height: 156px;
+    width: 367px;
+    background-color: #E7E7E7;
+   /* border-style: solid;
+    border-color: black;*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.c-b {
+    height: 156px;
+    width: 367px;
+    background-color: #E7E7E7;
+    /*border-style: solid;
+    border-color: black;*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#grad {
+    width: 113.8%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+.nuevos-tutoriales {
+    height: 475px;
+    width: auto;
+    background-color: #0C1D25;
+
+    padding-left: 144px;
+    padding-right: 144px;
+
+    background-image: url(imagenes/fondotutoriales.png);
+    /*aca poner imagen de fondo*/
+}
+/*#grad {
+    height: 475px;
+    width: auto;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+  }*/
+.tutoriales-contenedor {
+    width: 100%;
+    padding-top: 100px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+   /* padding-top: 100;*/
+    gap: 24px;
+}
+.imagen-tutos {
+    height: 269px;
+    width: 564px;
+
+    background-image: url(imagenes/tutoriales.png);
+}
+
+.contenedor-texto-noticias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 100px;
+    margin-bottom: 25px;
+
+    padding-left: 144px;
+    padding-right: 144px;
+}
+.ultimas-noticias{
+    height: 17.8%;
+    /*height: 603px;*/
+    /*height: 976px;*/
+    width: auto;
+    background-color: #0C1D25;
+
+
+    
+    padding-left: 144px;
+    padding-right: 144px;
+
+}
+.ultimas-noticias h1 {
+    text-align: center;
+    margin: 0%;
+}
+.noticias-contenedor1{
+    /*height: 38%;*/
+    /*height: 378px;*/
+    height: 362px;
+ 
+    width: 96.5%;
+    /*width: 368px;*/
+    /*96.5%*/
+
+    /*padding-right: 0%;*/
+    /*padding-left: 144px;
+    padding-right: 144px;*/
+   /* padding-top: 171px;*/
+   /* padding-bottom: 22px;*/
+    margin: 0%;
+    
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50%;
+    grid-template-areas: 
+    " a b c";
+
+    gap: 25px;
+
+}
+.noticias-contenedor2{
+    height: 280px;
+    width: 93.3%;
+    
+    /*padding-left: 144px;
+    padding-right: 144px;*/
+   /* padding-bottom: 100px;*/
+    
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50%;
+    grid-template-areas:
+    "d e f g";
+
+    gap: 24px;
+}
+.a {
+    width: auto;
+    /*height: 378px;*/
+    height: 188%;
+    /*height: 180%;*/
+    /*width: 368px;
+    height: 378px;*/
+   /* width: 100%;
+    height: 190%;*/
+
+    background-color: aliceblue;
+   grid-area: a; 
+   background-image: url(imagenes/Rect1.png);
+}
+.b {
+    width: auto;
+   /* height: 378px;*/
+   height: 188%;
+   /*height: 180%;*/
+    /*width: 368px;
+    height: 378px;*/
+    background-color: aliceblue;
+   grid-area: b; 
+   background-image: url(imagenes/Rect2.png);
+}
+.c {
+    width: auto;
+    /*height: 378px;*/
+    height: 188%;
+    /*height: 180%;*/
+    /*width: 368px;
+    height: 378px;*/
+    background-color: aliceblue;
+   grid-area: c; 
+   background-image: url(imagenes/Rect3.png);
+}
+.d {
+    width: auto;
+   /* height: auto;*/
+   height: 180%;
+    /*width: 270px;
+    height: 276px;*/
+    background-color: aliceblue;
+   grid-area: d; 
+   background-image: url(imagenes/Rect4.png);
+}
+.e {
+    width: auto;
+   /* height: auto;*/
+    height: 180%;
+    /*width: 270px;
+    height: 276px;*/
+    background-color: aliceblue;
+   grid-area: e; 
+   background-image: url(imagenes/Rect5.png);
+}
+.f {
+    width: auto;
+   /* height: auto;*/
+   height: 180%;
+    /*width: 270px;
+    height: 276px;*/
+    background-color: aliceblue;
+   grid-area: f; 
+   background-image: url(imagenes/Rect6.png);
+}
+.g {
+    width: auto;
+   /* height: auto;*/
+   height: 180%;
+    /*width: 270px;
+    height: 276px;*/
+    background-color: aliceblue;
+   grid-area: g; 
+   background-image: url(imagenes/Rect7.png);
+}
+
+.guias-de-compra {
+    height: 630px;
+    width: auto;
+    background-color: #86DA57;
+
+    padding-left: 144px;
+    padding-right: 144px;
+}
+.guias-contenedor {
+   padding-top: 100px;
+   display: flex;
+   flex-direction: column;
+   
+}
+.guias-contenedor h1, .guias-contenedor p {
+    /*esto de arriba no se si hizo algo mal o no, raro, ver*/
+    margin: 0%;
+    padding: 0%;
+    color: #0C1D25;
+}
+.guias-contenedor h1 {
+    margin-bottom: 24px;
+}
+.guias-contenedor p {
+    margin-bottom: 35px;
+}
+.guias-carruousel {
+    height: 283px;
+    /*width: 1150px;*/
+    width: auto;
+
+    background-color: #E7E7E7;
+    border-style: solid;
+    border-color: #0C1D25;
+}
+
+.formulario {
+    height: 1015px;
+    width: auto;
+    background-color: #171E26;
+
+    padding-left: 144px;
+    padding-right: 144px;
+}
+.formulario-contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+.formulario-real {
+  margin-top: 61px;  
+
+  row-gap: 29px;
+}
+legend {
+    color: #E7E7E7;
+}
+#nombre {
+    width: 100%;
+}
+#email {
+    width: 100%;
+}
+.formulario-contenedor h1 {
+    margin: 0%;
+}
+.formulario-contenedor p {
+    margin-top: 25px;
+}
+.checkbox {
+    height: 228px;
+    width: 462px;
+    background-color: #E7E7E7;
+}
+
+footer{
+    height: 176px;
+    width: auto;
+    background-color: 0E1217;
+
+    border-style: solid;
+    border-color: green;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    padding-left: 144px;
+    padding-right: 144px;
+}
+.contenedor-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+footer img {
+    height: auto;
+    width: 141px;
+
+}
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 29px;
+}
+.red {
+    width: 45.15px;
+    height: 47.5px;
+}
+
