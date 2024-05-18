@@ -1,0 +1,846 @@
+/*--------------------FUENTES--------------------*/
+@font-face {
+    font-family: "Sansation";
+    src: url("fuentes/Sansation_Bold.ttf");
+    /*src: url("fuentes/Sansation_Regular.ttf");*/
+}
+.titulo-main {
+    /*width: 760px; 681*/
+    width: 680px;
+    font-family: "Sansation", sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0%;
+}
+.main p {
+    width: 662px;
+}
+h1, .CTA, legend, .subtitulo-formulario, .p-modal {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+legend {
+    font-size: 16px;
+}
+.main p, .bullets H2, .subtitulo-formulario {
+    font-size: 24px;
+}
+.nuevos-tutoriales p {
+    font-size: 18px;
+}
+.guias-de-compra p {
+    font-size: 20px;
+}
+.CTA {
+    font-size: 20px; 
+}
+.formulario-texto h1 {
+    /*.main h1, */
+    font-size: 64px; 
+}
+.guias-de-compra h1, .ultimas-noticias h1, .nuevos-tutoriales h1 {
+    font-size: 35px;
+}
+.bullets H2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+/*--------------------PAGINA--------------------*/
+body {
+    margin: 0%;
+    padding: 0%;
+    /*padding-left: 144px;
+    padding-right: 144px;*/
+    background-color: #0C1D25;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.grid-contenedor {
+    width: 1153px;
+    width: 99.7%;
+    height: 4417px;
+    /*display: flex;*/
+    /*flex-direction: column;
+    justify-content: space-between;*/
+}
+
+header {
+    height: 74px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #0C1D25;
+
+    padding-left: 144px;
+    padding-right: 144px;
+}
+header img {
+    height: 74px;
+    width: 170px;
+    /*width: 170px;*/
+    /*margin: -20px 0 -20px;*/
+}
+
+.main {
+    width: auto;
+    height: 579px;
+    /*703px*/
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*padding-top: 124px;*/
+
+    padding-top: 124px;
+
+    background-color: #0C1D25;
+
+    padding-left: 144px;
+    padding-right: 144px;
+}
+#grad-main {
+
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), red);
+}
+.main img {
+    /*708px*/
+    /*width: auto;*/
+   /* width: 417.5px;*/
+    width: auto;
+    height: 704.5px;
+    /*height: auto;*/
+    /*primero -122px*/
+    margin: -126px 0 -10px -150px;
+    /*margin-bottom: -122px;*/
+   /* margin-right: -100px;*/
+
+}
+h1 {
+    color: greenyellow;
+}
+p {
+    margin-top: 44px;
+    color: white;
+}
+.CTA {
+    height: 51px;
+    margin-top: 57px;
+    border: none;
+    padding-left: 99px;
+    padding-right: 99px;
+    background-color: greenyellow;
+    cursor: pointer;
+    border-radius: 80px;
+}
+
+.bullets {
+    width: auto;
+    height: 262px;
+    background-color: #E7E7E7;
+
+   /* margin-left: 0px; ver como quitar en padding/margin en esta seccion*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding-top: 100px;
+    gap: 27px;
+   /* padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 142px;
+    padding-right: 142px;*/
+    padding-left: 144px;
+    padding-right: 144px;
+}
+.contenedor-texto {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.bullets H2 {
+    margin: 0%;
+
+}
+
+.a-b {
+    height: 156px;
+    width: 367px;
+    background-color: #E7E7E7;
+    /*border-style: solid;
+    border-color: black;*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.b-b {
+    height: 156px;
+    width: 367px;
+    background-color: #E7E7E7;
+   /* border-style: solid;
+    border-color: black;*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.c-b {
+    height: 156px;
+    width: 367px;
+    background-color: #E7E7E7;
+    /*border-style: solid;
+    border-color: black;*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#grad-tutos {
+    width: 113.8%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(255,0,0,0) 10%, #0C1D25 45%);
+}
+.nuevos-tutoriales {
+    height: 475px;
+    width: auto;
+    background-color: #0C1D25;
+
+    padding-left: 144px;
+    padding-right: 144px;
+
+    background-image: url(imagenes/fondotutoriales.png);
+    /*aca poner imagen de fondo*/
+}
+
+.tutoriales-contenedor {
+    width: 100%;
+    padding-top: 100px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+   /* padding-top: 100;*/
+    gap: 24px;
+}
+.imagen-tutos {
+    height: 269px;
+    width: 564px;
+
+    background-image: url(imagenes/tutoriales.png);
+}
+
+.contenedor-texto-noticias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    /*margin-top: 100px;*/
+    margin-bottom: 25px;
+
+    padding-top: 100px;
+    padding-left: 144px;
+    padding-right: 144px;
+}
+.ultimas-noticias{
+    /*height: 17.8%;*/
+    /*height: 603px;*/
+    height: 976px;
+    width: auto;
+    background-color: #0C1D25;
+ 
+    padding-left: 144px;
+    padding-right: 144px;
+
+}
+.ultimas-noticias h1 {
+    text-align: center;
+    margin: 0%;
+}
+.noticias-contenedor1{
+    /*height: 38%;*/
+    /*height: 378px;*/
+    height: 362px;
+ 
+    width: 96%;
+    /*width: auto;*/
+    /*width: 368px;*/
+    /*96.5%*/
+
+    /*padding-right: 0%;*/
+    /*padding-left: 144px;
+    padding-right: 144px;*/
+   /* padding-top: 171px;*/
+   /* padding-bottom: 22px;*/
+    margin: 0%;
+    
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50%;
+    grid-template-areas: 
+    " a b c";
+
+    gap: 25px;
+
+}
+.noticias-contenedor2{
+    height: 280px;
+    width: 93.3%;
+    
+    /*padding-left: 144px;
+    padding-right: 144px;*/
+   /* padding-bottom: 100px;*/
+    
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50%;
+    grid-template-areas:
+    "d e f g";
+
+    gap: 24px;
+}
+.a {
+    width: auto;
+    /*height: 378px;*/
+    height: 188%;
+    /*height: 180%;*/
+    /*width: 368px;
+    height: 378px;*/
+   /* width: 100%;
+    height: 190%;*/
+
+    background-color: aliceblue;
+   grid-area: a; 
+   background-image: url(imagenes/Rect1.png);
+   background-size: contain;
+}
+.b {
+    width: auto;
+   /* height: 378px;*/
+   height: 188%;
+   /*height: 180%;*/
+    /*width: 368px;
+    height: 378px;*/
+    background-color: aliceblue;
+   grid-area: b; 
+   background-image: url(imagenes/Rect2.png);
+   background-size: contain;
+}
+.c {
+    width: auto;
+    /*height: 378px;*/
+    height: 188%;
+    /*height: 180%;*/
+    /*width: 368px;
+    height: 378px;*/
+    background-color: aliceblue;
+   grid-area: c; 
+   background-image: url(imagenes/Rect3.png);
+   background-size: contain;
+}
+.d {
+    width: auto;
+   /* height: auto;*/
+   height: 180%;
+    /*width: 270px;
+    height: 276px;*/
+    background-color: aliceblue;
+   grid-area: d; 
+   background-image: url(imagenes/Rect4.png);
+   background-size: contain;
+}
+.e {
+    width: auto;
+   /* height: auto;*/
+    height: 180%;
+    /*width: 270px;
+    height: 276px;*/
+    background-color: aliceblue;
+   grid-area: e; 
+   background-image: url(imagenes/Rect5.png);
+   background-size: contain;
+}
+.f {
+    width: auto;
+   /* height: auto;*/
+   height: 180%;
+    /*width: 270px;
+    height: 276px;*/
+    background-color: aliceblue;
+   grid-area: f; 
+   background-image: url(imagenes/Rect6.png);
+   background-size: contain;
+}
+.g {
+    width: auto;
+   /* height: auto;*/
+   height: 180%;
+    /*width: 270px;
+    height: 276px;*/
+    background-color: aliceblue;
+   grid-area: g; 
+   background-image: url(imagenes/Rect7.png);
+   background-size: contain;
+}
+
+.guias-de-compra {
+   height: 630px;
+   width: auto;
+   background-color: #86DA57;
+
+   padding-left: 144px;
+   padding-right: 144px;
+}
+.guias-contenedor {
+   padding-top: 100px;
+   display: flex;
+   flex-direction: column;
+/***/
+
+   
+}
+.guias-contenedor h1, .guias-contenedor p {
+    /*esto de arriba no se si hizo algo mal o no, raro, ver*/
+    margin: 0%;
+    padding: 0%;
+    color: #0C1D25;
+}
+.guias-contenedor h1 {
+    margin-bottom: 24px;
+}
+.guias-contenedor p {
+    margin-bottom: 35px;
+}
+
+/***/
+
+.mySlides {display: none}
+/*img {vertical-align: middle;}*/
+img {
+    max-width: 440px;
+    max-height: 288px;
+}
+/*experimento recortando la imagen abajo*/
+.img {
+  width: 330px;
+  height: 270px;
+
+  object-position:-5px;
+  object-fit: none;
+}
+.imgcentro {
+  width: 440px;
+  height: 270px;
+}
+.img2 {
+  width: 330px;
+  height: 270px;
+
+  object-position: 0px;
+  object-fit: none;
+}
+/* Slideshow container */
+.slideshow-container {
+  width: 1150px;
+  height: 270px;
+  position: relative;
+  margin: auto;
+}
+
+.grilla {
+  width: 1150px;
+  height: 270px;
+  display: flex;
+  flex-direction: row;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+/*@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}*/
+
+
+/***/
+
+.formulario {  
+    height: 1015px;
+    width: auto;
+    background-color: #171E26;
+
+    padding-left: 144px;
+    padding-right: 144px;
+}
+
+.formulario-contenedor {
+    /*height: auto;*/
+    height: 1027px;
+    display: grid;
+
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    /*grid-template-areas:
+    "a b" "c .";*/
+    grid-template-areas:
+    "formulario-texto formulario-real" "formulario-imagen .";
+
+    /*padding-top: 100px;*/
+}
+.formulario-texto {
+    margin-top: 100px;
+    width: 100%;
+    height: 50px;
+    grid-area: formulario-texto;
+}
+.formulario-real {
+    margin-top: 161px;
+    width: 100%;
+    height: 50px;
+    grid-area: formulario-real;
+}
+.formulario-imagen {
+    width: 100%;
+    height: auto;
+    grid-area: formulario-imagen;
+}
+
+legend {
+    padding-left: 0%;
+    margin-bottom: 11px;
+    color: #E7E7E7;
+}
+form #nombre, #email {
+
+    width: 466px;
+    height: 44px;
+    border-radius: 5px;
+}
+.formulario-contenedor h1 {
+    margin: 0%;
+}
+.formulario-contenedor p {
+    margin-top: 25px;
+}
+.checkbox {
+    height: 228px;
+    
+    width: 100%;
+    /*466*/
+    background-color: #E7E7E7;
+}
+/*modal*/
+/*w: 992px h: 562px*/
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100vw; 
+    /*height: 100vh; */
+    height: auto;
+    overflow: auto; 
+    /*background-color: rgba(0,0,0,0.5);*/
+    /*background-color: #0C1D25;*/
+    background-color: rgb(12, 29, 37, 0.8);
+
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+   /* margin: 15% auto;*/
+   /*margin-top: 11%;
+   margin-bottom: 11%;*/
+   margin-top: 7vw;
+   margin-bottom: 30vh;
+   margin-left: 21.5%;
+   margin-right: 22%;
+    /*padding: 20px;*/
+    border: 1px solid #888;
+    /*width: 57%;*/
+    width: 54%;
+    height: 405px;
+    /*height: 90%;*/
+    /*height: 65%;*
+    /*height: 562px;*/
+
+    background-image: url(imagenes/imgmodal.png);
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-position-y: bottom
+  }
+  #grad-modal {
+    padding: 20px;
+    margin-top: 0%;
+    width: auto;
+    height: 90%;
+    background-image: linear-gradient(to left, rgba(255,0,0,0) 5%, #0C1D25 69%);
+}
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.p-modal {
+    /*margin-top: 50px;*/
+    width: 443px;
+    font-size: 40px;
+    /*display: flex;
+    flex-direction: row;*/
+
+    color: #D9D9D9;
+}
+
+footer{
+    /*height: 176px;*/
+    height: 176px;
+    width: auto;
+    background-color: 0E1217;
+
+    border-style: solid;
+    border-color: green;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    padding-left: 144px;
+    padding-right: 144px;
+}
+.contenedor-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+footer img {
+    height: auto;
+    width: 141px;
+
+}
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 29px;
+}
+.red {
+    width: 45.15px;
+    height: 47.5px;
+}
+/*--------------------MEDIA QUERYS--------------------*/
+@media (max-width: 600px){
+    
+    .main {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-image: url(imagenes/celular.png);
+    }
+
+
+    .main .grad-main, img {
+        width: 5%;
+        height: 0%;
+    }
+    .titulo-main {
+        width: 387px;
+        font-size:30px; 
+    }
+    .main p {
+        width: 374px;
+        font-size: 20px;
+    }
+    .CTA {
+        width: 273px;
+        margin-left: 78px;
+    }
+
+    .bullets {
+        width: auto;
+        height: 290;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding-top: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        row-gap: 0%;
+    }
+    .bullets img {
+        height: 60px;
+        width: 60px;
+    }
+    .a-b {
+        margin: 0%;
+        height: 90px;
+        width: 428px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        padding-left: 55px; 
+        padding-right: 70px;
+        align-items: center;
+
+    }
+    .b-b {
+        height: 90px;
+        width: 428px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 55px; 
+        padding-right: 78px;
+        align-items: center;
+    }
+    .c-b {
+        height: 90px;
+        width: 428px;
+        display: flex;
+        flex-direction: row;
+        /*justify-content: center; */
+        justify-content: space-between;
+        padding-left: 55px; 
+        padding-right: 78px;
+        align-items: center;
+    }
+    .contenedor-texto {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .nuevos-tutoriales {
+        height: 580px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .tutoriales-contenedor {
+        padding-top: 121px;
+        /*padding-bottom: 117px;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .imagen-tutos {
+        height: 181px;
+        width: 380px;
+    }
+
+    .ultimas-noticias {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .contenedor-texto-noticias {
+        padding-top: 18px;
+        padding-bottom: 76px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .guias-de-compra {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .formulario {
+        padding-left: 20px;
+        padding-right: 20px;
+        background-image: url(imagenes/celular.png);
+    }
+    .formulario-contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        
+    }
+    form #nombre, #email {
+        width: 98.5%;
+
+        height: 44px;
+    }
+
+    .formulario-imagen {
+        background-image: url(imagenes/celular.png);
+    }
+
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+
