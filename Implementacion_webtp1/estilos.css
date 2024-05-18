@@ -1,4 +1,20 @@
-
+/*--------------------FUENTES--------------------*/
+@font-face {
+    font-family: "Sansation";
+    src: url("fuentes/Sansation_Bold.ttf");
+    /*src: url("fuentes/Sansation_Regular.ttf");*/
+}
+.titulo-main {
+    /*width: 760px; 681*/
+    width: 680px;
+    font-family: "Sansation", sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0%;
+}
+.main p {
+    width: 662px;
+}
 h1, .CTA, legend, .subtitulo-formulario {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -37,10 +53,10 @@ p {
     font-style: normal;  
 }
 
-
-/*pagina*/
+/*--------------------PAGINA--------------------*/
 body {
     margin: 0%;
+    padding: 0%;
     /*padding-left: 144px;
     padding-right: 144px;*/
     background-color: #0C1D25;
@@ -52,10 +68,11 @@ body {
 
 .grid-contenedor {
     width: 1153px;
-    width: 99%;
+    width: 99.7%;
     height: 4417px;
-
-
+    /*display: flex;*/
+    /*flex-direction: column;
+    justify-content: space-between;*/
 }
 
 header {
@@ -70,9 +87,10 @@ header {
     padding-right: 144px;
 }
 header img {
-    height: auto;
+    height: 74px;
     width: 170px;
-    margin: -30px 0 -30px 0;
+    /*width: 170px;*/
+    /*margin: -20px 0 -20px;*/
 }
 
 .main {
@@ -92,16 +110,22 @@ header img {
     padding-left: 144px;
     padding-right: 144px;
 }
-/*.contenedor-img-main {
-    margin: 0%;
-}*/
+#grad-main {
+
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), red);
+}
 .main img {
     /*708px*/
+    /*width: auto;*/
+   /* width: 417.5px;*/
     width: auto;
-    height: auto;
-    margin: -122px 0 0 0;
+    height: 704.5px;
+    /*height: auto;*/
+    /*primero -122px*/
+    margin: -126px 0 -10px -150px;
     /*margin-bottom: -122px;*/
-    margin-right: -100px;
+   /* margin-right: -100px;*/
+
 }
 h1 {
     color: greenyellow;
@@ -185,10 +209,10 @@ p {
     justify-content: center;
 }
 
-#grad {
+#grad-tutos {
     width: 113.8%;
     height: 100%;
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    background-image: linear-gradient(to right, rgba(255,0,0,0) 10%, #0C1D25 45%);
 }
 .nuevos-tutoriales {
     height: 475px;
@@ -201,11 +225,7 @@ p {
     background-image: url(imagenes/fondotutoriales.png);
     /*aca poner imagen de fondo*/
 }
-/*#grad {
-    height: 475px;
-    width: auto;
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
-  }*/
+
 .tutoriales-contenedor {
     width: 100%;
     padding-top: 100px;
@@ -228,21 +248,20 @@ p {
     flex-direction: row;
     justify-content: center;
 
-    margin-top: 100px;
+    /*margin-top: 100px;*/
     margin-bottom: 25px;
 
+    padding-top: 100px;
     padding-left: 144px;
     padding-right: 144px;
 }
 .ultimas-noticias{
-    height: 17.8%;
+    /*height: 17.8%;*/
     /*height: 603px;*/
-    /*height: 976px;*/
+    height: 976px;
     width: auto;
     background-color: #0C1D25;
-
-
-    
+ 
     padding-left: 144px;
     padding-right: 144px;
 
@@ -256,7 +275,8 @@ p {
     /*height: 378px;*/
     height: 362px;
  
-    width: 96.5%;
+    width: 96%;
+    /*width: auto;*/
     /*width: 368px;*/
     /*96.5%*/
 
@@ -305,6 +325,7 @@ p {
     background-color: aliceblue;
    grid-area: a; 
    background-image: url(imagenes/Rect1.png);
+   background-size: contain;
 }
 .b {
     width: auto;
@@ -316,6 +337,7 @@ p {
     background-color: aliceblue;
    grid-area: b; 
    background-image: url(imagenes/Rect2.png);
+   background-size: contain;
 }
 .c {
     width: auto;
@@ -327,6 +349,7 @@ p {
     background-color: aliceblue;
    grid-area: c; 
    background-image: url(imagenes/Rect3.png);
+   background-size: contain;
 }
 .d {
     width: auto;
@@ -337,6 +360,7 @@ p {
     background-color: aliceblue;
    grid-area: d; 
    background-image: url(imagenes/Rect4.png);
+   background-size: contain;
 }
 .e {
     width: auto;
@@ -347,6 +371,7 @@ p {
     background-color: aliceblue;
    grid-area: e; 
    background-image: url(imagenes/Rect5.png);
+   background-size: contain;
 }
 .f {
     width: auto;
@@ -357,6 +382,7 @@ p {
     background-color: aliceblue;
    grid-area: f; 
    background-image: url(imagenes/Rect6.png);
+   background-size: contain;
 }
 .g {
     width: auto;
@@ -367,20 +393,23 @@ p {
     background-color: aliceblue;
    grid-area: g; 
    background-image: url(imagenes/Rect7.png);
+   background-size: contain;
 }
 
 .guias-de-compra {
-    height: 630px;
-    width: auto;
-    background-color: #86DA57;
+   height: 630px;
+   width: auto;
+   background-color: #86DA57;
 
-    padding-left: 144px;
-    padding-right: 144px;
+   padding-left: 144px;
+   padding-right: 144px;
 }
 .guias-contenedor {
    padding-top: 100px;
    display: flex;
    flex-direction: column;
+/***/
+
    
 }
 .guias-contenedor h1, .guias-contenedor p {
@@ -395,17 +424,108 @@ p {
 .guias-contenedor p {
     margin-bottom: 35px;
 }
-.guias-carruousel {
-    height: 283px;
-    /*width: 1150px;*/
-    width: auto;
 
-    background-color: #E7E7E7;
-    border-style: solid;
-    border-color: #0C1D25;
+/***/
+
+.mySlides {display: none}
+/*img {vertical-align: middle;}*/
+img {
+    max-width: 440px;
+    max-height: 288px;
+}
+/*experimento recortando la imagen abajo*/
+.img {
+  width: 330px;
+  height: 270px;
+
+  object-position:-5px;
+  object-fit: none;
+}
+.imgcentro {
+  width: 440px;
+  height: 270px;
+}
+.img2 {
+  width: 330px;
+  height: 270px;
+
+  object-position: 0px;
+  object-fit: none;
+}
+/* Slideshow container */
+.slideshow-container {
+  width: 1150px;
+  height: 270px;
+  position: relative;
+  margin: auto;
 }
 
-.formulario {
+.grilla {
+  width: 1150px;
+  height: 270px;
+  display: flex;
+  flex-direction: row;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+/*@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}*/
+
+
+/***/
+
+.formulario {  
     height: 1015px;
     width: auto;
     background-color: #171E26;
@@ -413,25 +533,49 @@ p {
     padding-left: 144px;
     padding-right: 144px;
 }
+
 .formulario-contenedor {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 100px;
+    /*height: auto;*/
+    height: 1027px;
+    display: grid;
+
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    /*grid-template-areas:
+    "a b" "c .";*/
+    grid-template-areas:
+    "formulario-texto formulario-real" "formulario-imagen .";
+
+    /*padding-top: 100px;*/
+}
+.formulario-texto {
+    margin-top: 100px;
+    width: 100%;
+    height: 50px;
+    grid-area: formulario-texto;
 }
 .formulario-real {
-  margin-top: 61px;  
-
-  row-gap: 29px;
+    margin-top: 161px;
+    width: 100%;
+    height: 50px;
+    grid-area: formulario-real;
 }
+.formulario-imagen {
+    width: 100%;
+    height: auto;
+    grid-area: formulario-imagen;
+}
+
 legend {
+    padding-left: 0%;
+    margin-bottom: 11px;
     color: #E7E7E7;
 }
-#nombre {
-    width: 100%;
-}
-#email {
-    width: 100%;
+form #nombre, #email {
+
+    width: 466px;
+    height: 44px;
+    border-radius: 5px;
 }
 .formulario-contenedor h1 {
     margin: 0%;
@@ -441,11 +585,48 @@ legend {
 }
 .checkbox {
     height: 228px;
-    width: 462px;
+    
+    width: 100%;
+    /*466*/
     background-color: #E7E7E7;
+}
+/*modal*/
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 footer{
+    /*height: 176px;*/
     height: 176px;
     width: auto;
     background-color: 0E1217;
@@ -479,5 +660,150 @@ footer img {
 .red {
     width: 45.15px;
     height: 47.5px;
+}
+/*--------------------MEDIA QUERYS--------------------*/
+@media (max-width: 600px){
+    
+    .main {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-image: url(imagenes/celular.png);
+    }
+
+
+    .main .grad-main, img {
+        width: 5%;
+        height: 0%;
+    }
+    .titulo-main {
+        width: 387px;
+        font-size:30px; 
+    }
+    .main p {
+        width: 374px;
+        font-size: 20px;
+    }
+    .CTA {
+        width: 273px;
+        margin-left: 78px;
+    }
+
+    .bullets {
+        width: auto;
+        height: 290;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding-top: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        row-gap: 0%;
+    }
+    .bullets img {
+        height: 60px;
+        width: 60px;
+    }
+    .a-b {
+        margin: 0%;
+        height: 90px;
+        width: 428px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        padding-left: 55px; 
+        padding-right: 70px;
+        align-items: center;
+
+    }
+    .b-b {
+        height: 90px;
+        width: 428px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 55px; 
+        padding-right: 78px;
+        align-items: center;
+    }
+    .c-b {
+        height: 90px;
+        width: 428px;
+        display: flex;
+        flex-direction: row;
+        /*justify-content: center; */
+        justify-content: space-between;
+        padding-left: 55px; 
+        padding-right: 78px;
+        align-items: center;
+    }
+    .contenedor-texto {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .nuevos-tutoriales {
+        height: 580px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .tutoriales-contenedor {
+        padding-top: 121px;
+        /*padding-bottom: 117px;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+    .imagen-tutos {
+        height: 181px;
+        width: 380px;
+    }
+
+    .ultimas-noticias {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .contenedor-texto-noticias {
+        padding-top: 18px;
+        padding-bottom: 76px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .guias-de-compra {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .formulario {
+        padding-left: 20px;
+        padding-right: 20px;
+        background-image: url(imagenes/celular.png);
+    }
+    .formulario-contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        
+    }
+    form #nombre, #email {
+        width: 98.5%;
+
+        height: 44px;
+    }
+
+    .formulario-imagen {
+        background-image: url(imagenes/celular.png);
+    }
+
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
 }
 

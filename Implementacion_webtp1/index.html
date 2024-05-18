@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <script src="./script.js"></script>
+
 </head>
 <body>
     <section class="grid-contenedor">
@@ -18,21 +18,25 @@
 
         <div class="main">
             <div>
-                <h1>
+                <h1 class="titulo-main">
                     Contenido Único Y solo tuyo, Xataka Selección.
                 </h1>
                 <p>
                     Suscribete GRATIS a nuestro newsletter por correo y disfruta <br> de todo el contenido exclusivo que tenemos para ti.
                 </p>
-                <DIV>
+                <div>
                     <button class="CTA">
                         UNIRME
                     </button>
-                </DIV>
+                </div>
             </div>
+
             <div>
+                <div id="grad-main">
                 <img src="imagenes/celular.png">
+                </div>
             </div>
+
         </div>
 
         <div class="bullets">
@@ -61,7 +65,7 @@
         </div>
 
         <div class="nuevos-tutoriales">
-            <div id="grad">
+            <div id="grad-tutos">
 
                 <div class="tutoriales-contenedor">
                     <div class="imagen-tutos"></div>
@@ -77,7 +81,7 @@
         <div class="ultimas-noticias">
             <div class="contenedor-texto-noticias">
                 <h1>
-                    ULTIMAS NOTICIAS<br>SOBRE... 
+                    ULTIMAS NOTICIAS SOBRE... 
                 </h1>
             </div>
             <div class="noticias-contenedor1">
@@ -97,13 +101,64 @@
             <div class="guias-contenedor">
                 <h1>GUIAS DE COMPRA</h1>
                 <p>La tecnología está llena de marcas, gamas y especificaciones técnicas, <br>suele ser difícil saber si compraras algo útil. Por eso nuestras guias de compra te ayudan a <br><strong>saber exactamente lo que necesitás.</strong></p>
-                <div class="guias-carruousel">
-
+               
+                <div class="slideshow-container">
+                    
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 5</div>
+                        <div class="grilla">
+                        <img class="img" src="imagenes/img2.png" style="margin-right: 24px;" >
+                        <img class="imgcentro" src="imagenes/img3.png" >
+                        <img class="img2" src="imagenes/img4.png" style="margin-left: 24px;" >
+                        </div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <div class="grilla">
+                      <img class="img" src="imagenes/img3.png" style="margin-right: 24px;" >
+                      <img class="imgcentro" src="imagenes/img4.png" >
+                      <img class="img2" src="imagenes/img5.png" style="margin-left: 24px;" >
+                    </div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <div class="grilla">
+                      <img class="img" src="imagenes/img4.png" style="margin-right: 24px;" >
+                      <img class="imgcentro" src="imagenes/img5.png" >
+                      <img class="img2" src="imagenes/img1.png" style="margin-left: 24px;" >
+                    </div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                      <div class="numbertext">4 / 5</div>
+                      <div class="grilla">
+                        <img class="img" src="imagenes/img5.png" style="margin-right: 24px;" >
+                        <img class="imgcentro" src="imagenes/img1.png" >
+                        <img class="img2" src="imagenes/img2.png" style="margin-left: 24px;" >
+                    </div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                      <div class="numbertext">5 / 5</div>
+                      <div class="grilla">
+                        <img class="img" src="imagenes/img1.png" style="margin-right: 24px;" >
+                        <img class="imgcentro" src="imagenes/img2.png" >
+                        <img class="img2" src="imagenes/img3.png" style="margin-left: 24px;" >
+                    </div>
+                    </div>
+                
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                
                 </div>
+               
             </div>
         </div>
 
         <div class="formulario">
+    
             <div class="formulario-contenedor">
                 <div class="formulario-texto">
                     <h1>
@@ -111,10 +166,12 @@
                     </h1>
                     <p class="subtitulo-formulario">
                         y disfruta de todos los beneficios.
-                    </p>
-                </div>
+                    </p>     
+                </div> 
+                
                 <div class="formulario-real">
-                    <form action="">
+                    <!--action="completo.html" method="get"--> 
+                   <form >
                         <legend for="nombre">Nombre</legend>
                         <input type="text" name="nombre" id="nombre" placeholder="nombre">
                         <br>
@@ -128,11 +185,35 @@
                         </div>
                         <br>
                         <br>
-                        <input type="submit" value="UNIRME" id="boton-unirme" class="CTA">
+                        <!--<input type="submit" value="UNIRME" id="boton-unirme" class="CTA">-->
+
                         <br>
                     </form>
+                    <button id="openModalBtn" class="CTA">Abrir Modal</button>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                          <span class="close">X</span>
+                          <!--&times;-->
+                          <p>Este es un ejemplo de modal.</p>
+                        </div>
+                      </div> 
+
+                </div> 
+
+                <div class="formulario-imagen">
+                    <div id="grad-main"></div>
+                    <img src="imagenes/celular.png"> </div>
+                    <!--si le agrego la </div> que le falta al grad se rompre todo-->
                 </div>
+
+
             </div>
+
+
+            <!--quizas ponerlo como background image?
+            
+            -->
+
         </div>
         <footer>
             <div class="contenedor-img">
@@ -150,5 +231,6 @@
     
     </section>
 
+    <script src="./script.js"></script>
 </body>
 </html>
