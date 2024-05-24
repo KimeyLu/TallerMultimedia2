@@ -748,142 +748,238 @@ footer img {
     height: 47.5px;
 }
 /*--------------------MEDIA QUERYS--------------------*/
-@media (max-width: 600px){
-    
-    .main {
-
+@media (max-width: 600px){ 
+    body {
+        background-color: #888;
+    }
+    header {
         width: auto;
+        height: 63px;
         padding-left: 20px;
         padding-right: 20px;
-        background-image: url(imagenes/celular.png);
     }
 
 
-    .main .grad-main, img {
-        width: 5%;
-        height: 0%;
+    .main {
+        margin: 0%;
+        width: auto;
+        /*height: 835px;*/
+        height: auto;
+        padding-left: 23px;
+       /* padding-right: 23px;*/
+       padding-right: 0%;
+       /* background-image: url(imagenes/celular.png);*/
+       display: flex;
+       flex-direction: column-reverse;
+       justify-content: end;
+    }
+    .imagen-main {
+        align-self: flex-end;
+        padding: 0%;
+        margin: 0%;
+        /*margin-left: 40%;*/
+        margin-bottom: 10px;
+       /* width: 329px;*/
+       width: 300px;
+        height: 536px;
+        /*display: none;*/
     }
     .titulo-main {
-        width: 387px;
-        font-size:30px; 
+        padding: 0%;
+        width: 90%;
+        font-size:40px; 
+        margin: 0%;
+        line-height: 35px;
+        margin-bottom: 20px;
     }
     .main p {
-        width: 374px;
-        font-size: 20px;
+       /* width: auto;*/
+       width: 85%;
+        font-size: 25px;
+        font-weight: 700;
+        margin: 0%;
+        margin-bottom: 44px;
     }
     .CTA {
         width: 273px;
-        margin-left: 78px;
+        height: 50px;
+        margin: 0%;
+        margin-left: 25%;
+        margin-bottom: 53px;
     }
+
+
 
     .bullets {
         width: auto;
-        height: 290;
+
+        height: 736px;
 
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
 
         padding-top: 5px;
+        padding: 0%;
         padding-left: 20px;
         padding-right: 20px;
 
         row-gap: 0%;
     }
+    .bullets h1 {
+        font-size: 20;
+        margin-top: 45px;
+        text-align: start;
+    }
+    .bullets p {
+        margin-top: 10px;
+    }
+    .bullets .contenedor-texto {
+        margin-left: 19px;
+        text-align: start;
+        font-size: 20px;
+    }
+    .b-b .contenedor-texto {
+        margin-left: 50px;
+        text-align: end;
+        margin-right: 19px;
+    }
     .bullets img {
-        height: 60px;
-        width: 60px;
+        margin: 0%;
+        height: 79px;
+        width: 79px;
     }
     .a-b {
         margin: 0%;
+        margin-bottom: 69px;
+
         height: 90px;
         width: 428px;
         display: flex;
         flex-direction: row;
         justify-content: space-between; 
-        padding-left: 55px; 
-        padding-right: 70px;
+        /*padding-left: 55px; 
+        padding-right: 70px;*/
         align-items: center;
-
     }
     .b-b {
+        margin: 0%;
+        margin-bottom: 69px;
+
         height: 90px;
-        width: 428px;
+        width: auto;
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content: space-between;
-        padding-left: 55px; 
-        padding-right: 78px;
+        /*padding-left: 55px; 
+        padding-right: 78px;*/
         align-items: center;
     }
     .c-b {
+        margin: 0%;
+        margin-bottom: 69px;
+
         height: 90px;
         width: 428px;
         display: flex;
         flex-direction: row;
         /*justify-content: center; */
         justify-content: space-between;
-        padding-left: 55px; 
-        padding-right: 78px;
+        /*padding-left: 55px; 
+        padding-right: 78px;*/
         align-items: center;
     }
-    .contenedor-texto {
-        text-align: center;
-        font-size: 20px;
-    }
+
 
     .nuevos-tutoriales {
         width: auto;
-        padding-left: 20px;
-        padding-right: 20px;
-        height: 580px;
-        padding-left: 20px;
-        padding-right: 20px;
+        height: 680px;
+
+        padding: 0%;
     }
     .tutoriales-contenedor {
-        padding-top: 121px;
+        width: auto;
+        padding: 0%;
+        /*padding-top: 121px;*/
         /*padding-bottom: 117px;*/
         display: flex;
         flex-direction: column;
         justify-content: start;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    #grad-tutos {
+        width: auto;
+        background-image: linear-gradient(to bottom, rgba(255,0,0,0) 10%, #0C1D25 45%);
     }
     .imagen-tutos {
-        height: 181px;
-        width: 380px;
+        margin-top: 88px;
+        /*height: 213px;
+        width: 381px;*/
+                height: 313px;
+        width: 100%;
+
+        align-self: center;
+        background-size: cover;
+        background-repeat: repeat-x;
+        background-position-y: bottom;
     }
 
+
     .ultimas-noticias {
+        width: auto;
+
+        height: 653px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
         padding-left: 20px;
         padding-right: 20px;
+        position: relative;
+
+    }
+    .contenedor-img-notis {
+        position: absolute;
+        z-index: 1;
     }
     .contenedor-texto-noticias {
-        padding-top: 18px;
-        padding-bottom: 76px;
-        padding-left: 10%;
-        padding-right: 10%;
+        margin: 0%;
+        margin-top: 18px;
+        margin-bottom: 104px;
+        /*padding-left: 10%;
+        padding-right: 10%;*/
+
+        position: absolute;
+        z-index: 2;
     }
 
     .guias-de-compra {
+        width: auto;
+        /*width: 100vw;*/
+        height: 744px;
+
         padding-left: 20px;
         padding-right: 20px;
 
         position: relative;
         z-index: auto;
-    }
-    /*.prueba {
-        position: relative;
-    }*/
-    .uno-com {
-        width: 100px;
-        height: 100px;
-        background-color: white;
 
+        display: flex;
+    }
+    .guias-de-compra img {
+        margin-top: 50px;
+    }
+    .circulos {
+        display: none;
     }
 
     .formulario {
+        width: auto;
+
         padding-left: 20px;
         padding-right: 20px;
-        background-image:  url(imagenes/celular.png);
+       /* background-image:  url(imagenes/celular.png);*/
     }
     .formulario-contenedor{
         display: flex;
@@ -896,14 +992,13 @@ footer img {
 
         height: 44px;
     }
-    .imagen-main {
-        display: none;
-    }
     .formulario-imagen {
        display: none;
     }
 
     footer {
+        width: auto;
+
         padding-left: 20px;
         padding-right: 20px;
     }
