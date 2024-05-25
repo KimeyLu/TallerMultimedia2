@@ -438,8 +438,6 @@ p {
     border-top-left-radius: 700%;  
     border-bottom-left-radius: 300%;  
 
-
-
 }
 .contenedor2 {
     margin-left: 650px;
@@ -490,7 +488,6 @@ p {
     position: absolute;
     z-index: 1;
 
-    mask-image: linear-gradient(to left, rgba(255,0,0,0) 1%,  #CED9C8 10%);
 }
 /***/
 
@@ -728,6 +725,7 @@ footer{
     padding-right: 144px;
 }
 .contenedor-img {
+    margin-top: 13px;
     display: flex;
     flex-direction: row;
     justify-content: center; 
@@ -735,22 +733,12 @@ footer{
 footer img {
     height: auto;
     width: 141px;
+}
 
-}
-.redes {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 29px;
-}
-.red {
-    width: 45.15px;
-    height: 47.5px;
-}
 /*--------------------MEDIA QUERYS--------------------*/
 @media (max-width: 600px){ 
     body {
-        background-color: #888;
+        background-color: #0C1D25;
     }
     header {
         width: auto;
@@ -759,6 +747,9 @@ footer img {
         padding-right: 20px;
     }
 
+    .grid-contenedor {
+        height: auto;
+    }
 
     .main {
         margin: 0%;
@@ -929,19 +920,24 @@ footer img {
     .ultimas-noticias {
         width: auto;
 
-        height: 653px;
+        height: 753px;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: end;
 
         padding-left: 20px;
-        padding-right: 20px;
+        padding-right: 0%;
         position: relative;
 
     }
     .contenedor-img-notis {
+        margin: 0%;
+        width: 60%;
+        height: 95%;
+        align-self: last baseline;
+        opacity: 0.5;
         position: absolute;
-        z-index: 1;
+        z-index: 2;
     }
     .contenedor-texto-noticias {
         margin: 0%;
@@ -959,45 +955,126 @@ footer img {
         /*width: 100vw;*/
         height: 744px;
 
-        padding-left: 20px;
-        padding-right: 20px;
+        /*padding-left: 20px;
+        padding-right: 20px;*/
+        padding-left: 0%;
+        padding-right: 0%;
 
         position: relative;
-        z-index: auto;
+        z-index: -2;
 
         display: flex;
     }
+    .guias-contenedor h1, .guias-contenedor p {
+        margin-left: 20px;
+    }
     .guias-de-compra img {
-        margin-top: 50px;
+
+        width: 705px;
+        height: 56%;
+        margin-top: 240px;
+        align-self: center;
+        
+        object-fit: contain;
     }
     .circulos {
-        display: none;
+        width: 100%;
+        height: 100%;
+
     }
+    .contenedor1 {
+        /*margin-right: 10%;*/
+        margin-left: 0%;
+        margin-top: 190%;
+        /*width: 300px;*/
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+    }
+    .contenedor2 {
+        margin-left: 0%;
+        margin-top: 140%;
+        width: 600px;
+        height: 600px;
+        border-radius: 60%;
+    }
+    .contenedor3 {
+        margin-left: 0%;
+        margin-top: 110%;
+        width: 596px;
+        height: 600px;
+        border-radius: 0%;
+        border-top-left-radius: 175%;
+        border-top-right-radius: 180%;
+    }
+
+
 
     .formulario {
         width: auto;
+        /*height: 997px;*/
+        height: 21%;
 
         padding-left: 20px;
-        padding-right: 20px;
+        /*padding-right: 20px;*/
+        padding-right: 0%;
+
        /* background-image:  url(imagenes/celular.png);*/
+    }
+    .formulario-texto {
+        z-index: 2;
+    }
+    .formulario h1 {
+        width: 100%;
+        font-size: 35px;
+    }
+    .formulario p {
+        font-weight: 700;
     }
     .formulario-contenedor{
         display: flex;
         flex-direction: column;
-        justify-content: start;
-        
+        justify-content: start;   
+    }
+    .formulario-real {
+        margin-right: 20px;
+        padding: 0%;
+        z-index: 2;
     }
     form #nombre, #email {
         width: 98.5%;
 
         height: 44px;
+    }  
+    .contenedor-check .checkbox ul li {
+        display: block;
+        width: 132px;
+        height: auto;
+    }
+    .imagen-check {
+        width: 132px;
+        height: 132px;
+    }
+    .CTA {
+        margin-top: 80px;
+        margin-bottom: 131px;
     }
     .formulario-imagen {
-       display: none;
+        width: 70%;
+        height: 100%;
+        margin-top: 135px;
+        align-self: last baseline;
+        opacity: 0.5;
+
+
+        position: absolute;
+        z-index: 1;
     }
 
     footer {
+        margin: 0%;
         width: auto;
+        height: 63px;
 
         padding-left: 20px;
         padding-right: 20px;
