@@ -1,3 +1,15 @@
+        // Seleccionar el botón
+        var boton = document.getElementById('boton');
+        // Seleccionar la sección de destino
+        var seccionDestino = document.getElementById('seccionDestino');
+        
+        // Añadir un evento de clic al botón
+        boton.addEventListener('click', function() {
+            // Desplazarse suavemente hacia la sección de destino
+            seccionDestino.scrollIntoView({ behavior: 'smooth' });
+        });
+
+
 // Obtener el modal
   var modal = document.getElementById("myModal");
 
@@ -9,9 +21,7 @@
 
   // Cuando el usuario hace clic en el botón, abrir el modal
   btn.onclick = function() {
-    /*if (validateEmail(valor_email)) {*/
     modal.style.display = "block";
-    /*}*/
   }
 
   // Cuando el usuario hace clic en la 'x', cerrar el modal
@@ -46,26 +56,16 @@ function enviarForm(event) {
     modal.style.display = "none";
     alert("Por favor, rellena el formulario.");
     return;
-    /*placeholder_nombre.innerHTML = "NOMBRE";*/
   } else {
     placeholder_nombre.innerHTML = valor_nombre;
   }
   if (valor_email == "" || !validateEmail(valor_email)){
-    /*placeholder_email.innerHTML = "EMAIL";*/
     modal.style.display = "none";
     alert("Por favor, introduce una dirección de correo electrónico válida.");
     return;
   } else {
     placeholder_email.innerHTML = valor_email;
   }
-  
-  /*else {
-    if (!validateEmail(valor_email)) {
-      alert("Por favor, introduce una dirección de correo electrónico válida.");
-      return;
-    }
-    placeholder_email.innerHTML = valor_email;
-  }*/
 }
 
 function validateEmail(email) {
@@ -73,3 +73,4 @@ function validateEmail(email) {
   var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return re.test(email);
 }
+
