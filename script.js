@@ -26,6 +26,8 @@
     }
   }
 
+  
+  /*formulario */
 var input_nombre = document.getElementById("nombre");
 var input_email = document.getElementById("email");
 
