@@ -43,20 +43,29 @@ function enviarForm(event) {
   var placeholder_email = document.getElementById("email-placeholder");
 
   if (valor_nombre == ""){
-    placeholder_nombre.innerHTML = "NOMBRE";
+    modal.style.display = "none";
+    alert("Por favor, rellena el formulario.");
+    return;
+    /*placeholder_nombre.innerHTML = "NOMBRE";*/
   } else {
     placeholder_nombre.innerHTML = valor_nombre;
   }
-  if (valor_email == ""){
-    placeholder_email.innerHTML = "EMAIL";
-
+  if (valor_email == "" || !validateEmail(valor_email)){
+    /*placeholder_email.innerHTML = "EMAIL";*/
+    modal.style.display = "none";
+    alert("Por favor, introduce una dirección de correo electrónico válida.");
+    return;
   } else {
+    placeholder_email.innerHTML = valor_email;
+  }
+  
+  /*else {
     if (!validateEmail(valor_email)) {
       alert("Por favor, introduce una dirección de correo electrónico válida.");
       return;
     }
     placeholder_email.innerHTML = valor_email;
-  }
+  }*/
 }
 
 function validateEmail(email) {
