@@ -155,6 +155,10 @@ p {
     cursor: pointer;
     border-radius: 80px;
 }
+.CTA:hover {
+    background-color: #92E165;
+    cursor: pointer;
+}
 
 .bullets {
     width: auto;
@@ -320,6 +324,9 @@ p {
 }
 .texto-tutos {
   width: 466px;
+}
+.texto-tutos p {
+    width: 436px; 
 }
 .amarillo {
     color: #EFE485;
@@ -570,7 +577,7 @@ form #nombre, #email {
     margin-top: 25px;
     color: #FFFFFF;
 }
-/*checkbooooooooooooooooooooooooooooooooooooooooox*/
+/*checkbox*/
 .checkbox {
     height: 228px;
     width: auto;
@@ -631,7 +638,7 @@ form #nombre, #email {
     height: 100%;
     object-fit: contain;
 }
-/***fin del checkbokssssssssssssss***/
+
 
 .modal {
     display: none; 
@@ -685,17 +692,28 @@ form #nombre, #email {
 }
   
 .close {
-    color: #aaaaaa;
+
+    float: right;
+    /*align-self: baseline;
+    position: absolute;
+    z-index: 1;*/
+    align-self: last baseline;
+   /* color: #aaaaaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-    font-family: sans-serif;
+    font-family: sans-serif;*/
+  }
+  .close img {
+    margin: 10px;
+    width: 20px;
+    height: 20px;
   }
   
   .close:hover,
   .close:focus {
-    color: #000;
-    text-decoration: none;
+    /*color: #000;
+    text-decoration: none;*/
     cursor: pointer;
 }
 .p-modal {
@@ -708,7 +726,7 @@ form #nombre, #email {
     line-height: 60px;
     color: #D9D9D9;
 }
-.modal-content img {
+.imgoculta {
     display: none;
 }
 
@@ -741,6 +759,20 @@ footer img {
 .br {
     display: none;
 }
+.br1 {
+    display: none;
+}
+.redes {
+    display: none;
+}
+.redes-texto {
+    display: none;
+}
+/*#cerrar {
+    width: 20px;
+    height: 20px;
+    margin: 0%;
+}*/
 
 /*--------------------MEDIA QUERYS--------------------*/
 @media (max-width: 600px){ 
@@ -1119,7 +1151,7 @@ footer img {
         justify-content: flex-start;
        
     }
-    .modal-content img {
+    .imgoculta {
         display: block;
         width: 170px;
         height: auto;
@@ -1138,10 +1170,32 @@ footer img {
     }
     .br {
         display: block;
+        margin-bottom: 40px;
     }
-    /*#nombre-placeholder {
-        margin-bottom: 20px;
-    }*/
+    .br1 {
+        display: block;
+
+    }
+    .redes {
+        width: 300px;
+        height: auto;
+        display: block;
+        align-self: center;
+
+        display: flex;
+        flex-direction: row;
+
+        flex-grow: 1;
+        column-gap: 20px;
+
+    }
+    .redes-texto {
+        display: block;
+        margin-top: 40px;
+        align-self: center;
+        font-size: 16px;
+    }
+
 
 }
 
