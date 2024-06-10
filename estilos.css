@@ -55,15 +55,9 @@ p {
 
 /*--------------------PAGINA--------------------*/
 
-/*figma:
-1440x1024*/
-
 body {
     margin: 0%;
     padding: 0%;
-    /*padding-left: 144px;
-    padding-right: 144px;*/
-    background-color: #0C1D25;
 
     display: flex;
     flex-direction: row;
@@ -249,6 +243,7 @@ p {
 
 #grad-tutos {
     width: 113.8%;
+    /*width: 100%;*/
     height: 100%;
     background-image: linear-gradient(to right, rgba(255,0,0,0) 10%, #0C1D25 45%);
 }
@@ -262,7 +257,8 @@ p {
 }
 
 .tutoriales-contenedor {
-    width: 100%;
+    /*width: 100%;*/
+    width: auto;
     padding-top: 6.5%;
     display: flex;
     flex-direction: row;
@@ -524,7 +520,6 @@ form #nombre, #email {
   }
   
   .modal-content {
-    background-color: #fefefe;
    margin-top: 7vw;
    margin-bottom: 30vh;
    margin-left: 21.5%;
@@ -575,7 +570,7 @@ form #nombre, #email {
 footer{
     height: 176px;
     width: auto;
-    background-color: 0E1217;
+    background-color: #0E1217;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -601,65 +596,82 @@ footer img {
 }
 
 /*--------------------MEDIA QUERYS--------------------*/
-@media (max-width: 600px){ 
-    body {
-        background-color: #0C1D25;
-    }
-    header {
+/*--------------------------------------------media 430-------------------------------------------*/
+
+@media (max-width: 430px){
+
+    /*.grid-contenedor {
+        height: auto;
+    }*/
+
+/*--------HEADER---------*/
+    header img {
         width: auto;
         height: 63px;
         padding-left: 20px;
         padding-right: 20px;
+
+        position: absolute;
+        z-index: 2;
+        align-self: center;
     }
 
-    .grid-contenedor {
-        height: auto;
-    }
-    /*h1 {
-        color: blue;
-    }*/
+/*--------MAIN---------*/
     .main {
-        /*margin: 0%;*/
+        height: 805px;
+
         width: auto;
-        height: auto;
         padding-left: 23px;
-       padding-right: 0%;
+        padding-right: 0%;
        display: flex;
        flex-direction: column-reverse;
        justify-content: end;
     }
     .imagen-main {
-        align-self: flex-end;
-        padding: 0%;
-        /*margin: 0%;*/
-        margin-bottom: 10px;
-       width: 300px;
-        height: 536px;
+        align-self: last baseline;
+        width: 77%;
+        height: 77%;
+        margin-top: 0%;
+        margin-bottom: 24%;
+        position: absolute;
+        z-index: 1;
+        opacity: 0.9;
+    }
+    .contenedor-main-info {
+        position: absolute;
+        z-index: 2;
+
+        height: 40%;
     }
     .titulo-main {
         padding: 0%;
         width: 90%;
-        font-size:40px; 
         margin: 0%;
         line-height: 35px;
         margin-bottom: 20px;
+
+        font-size: 30px;
     }
     .main p {
-       width: 85%;
-        font-size: 25px;
+        width: 95%;
+        font-size: 20px;
+        margin-top: 0%;
+        margin-bottom: 10px;
         font-weight: 700;
-        margin: 0%;
-        margin-bottom: 44px;
+
     }
     .CTA {
         width: 325px;
         height: 50px;
-        margin: 0%;
-        margin-left: 20%;
-        margin-bottom: 53px;
+        margin-top: 25px;
+       /* margin-bottom: 73px;*/
+       margin-bottom: auto;
+        margin-left: 7%;
         text-align: center;
+
     }
 
+/*--------BULLETS---------*/
     .bullets {
         width: auto;
         height: 520px;
@@ -678,69 +690,81 @@ footer img {
         margin-bottom: 19px;
         text-align: start;
     }
-    .bullets-contenedor {
-        margin-top: 0%;
-        /*margin-bottom: 40%;*/
-        gap: 45px;
-    }
-    .bullets h2 {
-        font-size: 20;
-        margin-top: 0;
+    .bullets h2, p {
+        width: auto;
+        font-size: 20px;
         text-align: start;
+        margin-top: 0;
     }
     .bullets p {
         margin-top: 10px;
+    }
+    .bullets-contenedor {
+        width: auto;
+        margin-top: 0%;
+        gap: 45px;
+        display: flex;
+        flex-direction: column;
     }
     .bullets .contenedor-texto {
         margin-left: 19px;
         text-align: start;
         font-size: 20px;
     }
-    /*.b-b .contenedor-texto {
-        margin-left: 50px;
-        text-align: end;
-        margin-right: 19px;
-    }*/
+    .contenedor-texto {
+        margin-left: 0%;
+        width: auto;
+        margin: auto;
+    }
     .bullets img {
         margin: 0%;
         height: 79px;
         width: 79px;
     }
     .a-b {
+        width: auto;
+        margin: 0;
+        display: flex;
+
         margin: 0%;
-        margin-bottom: 69px;
         height: 90px;
-        width: 428px;
+
         display: flex;
         flex-direction: row;
         justify-content: space-between; 
         align-items: center;
     }
     .b-b {
-        margin: 0%;
-        margin-bottom: 69px;
-        height: 90px;
         width: auto;
+        margin: 0;
+        display: flex;
+
+        margin: 0%;
+        height: 90px;
+
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-between; 
         align-items: center;
-        gap: 19px;
     }
     .c-b {
+        width: auto;
+        margin: 0;
+        display: flex;
+
         margin: 0%;
-        margin-bottom: 69px;
         height: 90px;
-        width: 428px;
+
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-between; 
         align-items: center;
     }
 
+/*--------TUTOS---------*/
     .nuevos-tutoriales {
         width: auto;
-        height: 680px;
+        height: 580px;
         padding: 0%;
     }
     .tutoriales-contenedor {
@@ -758,19 +782,26 @@ footer img {
     }
     .imagen-tutos {
         margin-top: 88px;
-                height: 313px;
-        width: 100%;
+                height: 213px;
+                width: 380px;
 
         align-self: center;
         background-size: cover;
         background-repeat: repeat-x;
         background-position-y: bottom;
     }
-
+    .texto-tutos {
+        width: auto;
+    }
+    .texto-tutos p {
+        width: 380px;
+        font-size: 16px;
+    }
+/*--------NOTIS---------*/
     .ultimas-noticias {
         width: auto;
+        height: 653px;
 
-        height: 753px;
         display: flex;
         flex-direction: column-reverse;
         justify-content: end;
@@ -778,7 +809,6 @@ footer img {
         padding-left: 20px;
         padding-right: 0%;
         position: relative;
-
     }
     .contenedor-img-notis {
         margin: 0%;
@@ -796,19 +826,39 @@ footer img {
         position: absolute;
         z-index: 2;
     }
-
+    .contenedor-texto-noticias h1 {
+        font-size: 30px;
+        width: 390px;
+    }
+    .contenedor-texto-noticias p {
+        font-size: 16px;
+        width: 390px;
+    }
+/*--------GUIAS---------*/
     .guias-de-compra {
+        height: 477px;
+
         width: auto;
-        height: 744px;
         padding-left: 0%;
         padding-right: 0%;
         position: relative;
         z-index: -2;
         display: flex;
     }
-    .guias-contenedor h1, .guias-contenedor p {
+    .guias-contenedor h1 {
+        /*margin-top: 0%;
+        margin-bottom: 0%;*/
+        font-size: 30px;
+        width: 390px;
         margin-left: 20px;
     }
+    .guias-contenedor p {
+        font-size: 16px;
+        width: 390px;
+        margin-left: 20px;
+        /*margin-bottom: 50%;*/
+    }
+
     .guias-de-compra img {
         width: 705px;
         height: 56%;
@@ -822,53 +872,51 @@ footer img {
     }
     .contenedor1 {
         margin-left: 0%;
-        margin-top: 190%;
-        width: 596px;
-        height: 600px;
-        border-radius: 50%;
+        margin-top: 160%;
+
+        width: 425px;
+        height: 300px;
+        border-radius: 0%;
+        border-top-left-radius: 50%;  
+        border-top-right-radius: 50%; 
     }
     .contenedor2 {
         margin-left: 0%;
         margin-top: 140%;
-        width: 599px;
-        height: 600px;
-        border-radius: 60%;
+
+        width: 425px;
+        height: 300px;  
+        border-radius: 0%;
+        border-top-left-radius: 50%;  
+        border-top-right-radius: 50%; 
     }
     .contenedor3 {
         margin-left: 0%;
         margin-top: 110%;
-        width: 599px;
-        height: 600px;
+        
+        width: 425px;
+        height: 300px;  
         border-radius: 0%;
-        border-top-left-radius: 175%;
-        border-top-right-radius: 180%;
+        border-top-left-radius: 50%;  
+        border-top-right-radius: 50%; 
     }
-
+    .guias-contenedor img {
+        margin-top: 100px;
+        width: 430px;
+        height: 343px;
+    }
+    
+/*--------FORMULARIO---------*/
     .formulario {
+        height: 897px;
         width: auto;
-        /*height: 997px;*/
-        height: 21%;
-
+        /*margin-bottom: 50px;*/
         padding-left: 20px;
         /*padding-right: 20px;*/
         padding-right: 0%;
-
-       /* background-image:  url(imagenes/celular.png);*/
     }
     .formulario-texto {
         z-index: 2;
-    }
-    .formulario h1 {
-        width: 100%;
-        font-size: 35px;
-    }
-    .formulario p {
-        font-weight: 700;
-    }
-    .formulario-contenedor{
-        display: flex;
-        flex-direction: column;
-        justify-content: start;   
     }
     .formulario-real {
         margin-right: 20px;
@@ -880,265 +928,15 @@ footer img {
 
         height: 44px;
     }  
-    .contenedor-check .checkbox ul li {
-        /*display: block;*/
-        width: 132px;
-        height: auto;
-    }
-    .imagen-check {
-        width: 132px;
-        height: 132px;
-    }
-    .CTA {
-        margin-top: 80px;
-        margin-bottom: 131px;
-    }
-    .formulario-imagen {
-        width: 70%;
-        height: 100%;
-        margin-top: 135px;
-        align-self: last baseline;
-        opacity: 0.5;
-
-
-        position: absolute;
-        z-index: 1;
-    }
-
-    footer {
-        margin: 0%;
-        width: auto;
-        height: 63px;
-
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    footer img {
-        margin: 0%;
-    }
-
-    .modal {
-        height: 100%;
-        background-color: grey;
-    }
-    .modal-content {
-        margin: 0%;
+    .formulario h1 {
         width: 100%;
-        height: 100%;
-        /*background-color: #171E26;*/
-        /*background-image: linear-gradient(to top, rgba(255,0,0,0) 45%,  #0C1D25 99%), linear-gradient(0deg, rgba(23, 30, 38, 0.565), rgba(23, 30, 38, 0.565)), url(imagenes/imgmodal2.png);*/
-        /*object-fit: initial;*/
-        background-size: none;
-        background-repeat:no-repeat;
-        background-position-y: bottom;
-
-    }
-    #grad-modal {
-        padding: 0%;
-        margin: 0%;
-
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-
-        gap: 0;
-        background-image: linear-gradient(to top, rgba(255,0,0,0) 45%,  #0C1D25 99%), linear-gradient(0deg, rgba(23, 30, 38, 0.565), rgba(23, 30, 38, 0.565)), url(imagenes/imgmodal2.png);    
-        
-       
-    }
-    .imgoculta {
-        display: block;
-        width: 170px;
-        height: auto;
-
-        align-self: center;
-        margin-bottom: 97px;
-    }
-    .p-modal{
-        align-self: center;
-        color: #D9D9D9;
-        width: 325px;
-        height: 932px;
-        text-align: center;
-        margin: 0%;
-        padding: 0%;
-    }
-    .br {
-        display: block;
-        margin-bottom: 40px;
-    }
-    .br1 {
-        display: block;
-
-    }
-}
-
-/*--------------------------------------------media 430-------------------------------------------*/
-
-@media (max-width: 430px){
-
-    html {
-        height: 932px;
-    }
-    .grid-contenedor {
-        height: auto;
-    }
-
-    header img {
-        position: absolute;
-        z-index: 2;
-        align-self: center;
-    }
-    .main {
-        height: 805px;
-    }
-    .imagen-main {
-        align-self: last baseline;
-        width: 77%;
-        height: 77%;
-        margin-top: 0%;
-        margin-bottom: 24%;
-        position: absolute;
-        z-index: 1;
-        opacity: 0.9;
-    }
-    .contenedor-main-info {
-        position: absolute;
-        z-index: 2;
-    }
-    .titulo-main {
-        font-size: 30px;
-    }
-    .main p {
-        width: 95%;
-        font-size: 20px;
-        margin-bottom: 10px;
-
-    }
-    .CTA {
-        margin-top: 45px;
-        margin-bottom: 73px;
-        margin-left: 7%;
-
-    }
-
-    .bullets h2, p {
-        width: auto;
-        font-size: 20px;
-
-    }
-    .bullets-contenedor {
-        width: auto;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-    }
-    .contenedor-texto {
-        margin-left: 0%;
-        width: auto;
-        margin: auto;
-    }
-    .a-b {
-        width: auto;
-        margin: 0;
-        display: flex;
-    }
-    .b-b {
-        margin: 0;
-    }
-    .c-b {
-        width: auto;
-        margin: 0;
-        /*margin-bottom: 20px;*/
-    }
-    .b-b .contenedor-texto {
-        margin-left: 0%;
-        /*margin-right: 10px;*/
-    }
-    .b-b img {
-        /*margin-right: 20px;*/
-        margin: 0;
-    }
-
-    .nuevos-tutoriales {
-        height: 580px;
-    }
-    .imagen-tutos {
-        width: 380px;
-        height: 213px;
-    }
-    .texto-tutos {
-        width: auto;
-    }
-    .texto-tutos p {
-        width: 380px;
-        font-size: 16px;
-    }
-
-    .ultimas-noticias {
-        height: 653px;
-    }
-    .contenedor-texto-noticias h1 {
-        font-size: 30px;
-        width: 390px;
-    }
-    .contenedor-texto-noticias p {
-        font-size: 16px;
-        width: 390px;
-    }
-
-    .guias-de-compra {
-        height: 477px;
-    }
-    /*.guias-contenedor {
-        margin-top: 0%;
-        margin-bottom: 80%;
-        align-self: self-start;
-    }*/
-    .guias-contenedor h1 {
-        /*margin-top: 0%;
-        margin-bottom: 0%;*/
-        font-size: 30px;
-        width: 390px;
-    }
-    .guias-contenedor p {
-        font-size: 16px;
-        width: 390px;
-        /*margin-bottom: 50%;*/
-    }
-    .contenedor1 {
-        width: 425px;
-        height: 300px;
-        border-radius: 0%;
-        border-top-left-radius: 50%;  
-        border-top-right-radius: 50%; 
-    }
-    .contenedor2 {
-        width: 425px;
-        height: 300px;  
-        border-radius: 0%;
-        border-top-left-radius: 50%;  
-        border-top-right-radius: 50%; 
-    }
-    .contenedor3 {
-        width: 425px;
-        height: 300px;  
-        border-top-left-radius: 50%;  
-        border-top-right-radius: 50%; 
-    }
-    .guias-contenedor img {
-        margin-top: 100px;
-        width: 430px;
-        height: 343px;
-    }
-    
-
-    .formulario {
-        height: 897px;
-        /*margin-bottom: 50px;*/
+        font-size: 35px;
     }
     .formulario-contenedor {
         height: 897px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start; 
     }
     form {
         height: auto;
@@ -1149,8 +947,12 @@ footer img {
     } 
     .formulario-texto p {
         font-size: 20px;
+        font-weight: 700;
+
     } 
     .checkbox .contenedor-check .checkbox ul li {
+        width: 132px;
+        height: auto;
         width: 88px;
         height: 88px;
     }
@@ -1162,22 +964,96 @@ footer img {
     .formulario-imagen {
         height: 624.92px;
         margin-top: 250px;
+
+        width: 70%;
+        align-self: last baseline;
+        opacity: 0.5;
+
+
+        position: absolute;
+        z-index: 1;
+    }
+    .CTA {
+        margin-top: 80px;
+        margin-bottom: 131px;
     }
     form .CTA {
         margin: 0%;
         margin-left: 7%;
     }
 
+/*--------FOOTER---------*/
     footer {
         height: 63px;
+
+        margin: 0%;
+        width: auto;
+
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
-    /*form .CTA {
-        margin-bottom: ;
-    }*/
+    footer img {
+        margin: 0%;
+    }
 
-    /*footer {
-        position: absolute;
-        z-index: 3;
-    }*/
+    footer .contenedor-img {
+        margin: 0%;
+        margin-top: 3px;
+    }
+
+/*--------MODAL---------*/
+.modal {
+    height: 100%;
+    background-color: grey;
+}
+.modal-content {
+    margin: 0%;
+    width: 100%;
+    height: 100%;
+
+    background-size: none;
+    background-repeat:no-repeat;
+    background-position-y: bottom;
+
+}
+#grad-modal {
+    padding: 0%;
+    margin: 0%;
+
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+    gap: 0;
+    background-image: linear-gradient(to top, rgba(255,0,0,0) 45%,  #0C1D25 99%), linear-gradient(0deg, rgba(23, 30, 38, 0.565), rgba(23, 30, 38, 0.565)), url(imagenes/imgmodal2.png);    
+    
+   
+}
+.imgoculta {
+    display: block;
+    width: 170px;
+    height: auto;
+
+    align-self: center;
+    margin-bottom: 97px;
+}
+.p-modal{
+    align-self: center;
+    color: #D9D9D9;
+    width: 325px;
+    height: 932px;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+}
+.br {
+    display: block;
+    margin-bottom: 40px;
+}
+.br1 {
+    display: block;
+
+}
+
 }
